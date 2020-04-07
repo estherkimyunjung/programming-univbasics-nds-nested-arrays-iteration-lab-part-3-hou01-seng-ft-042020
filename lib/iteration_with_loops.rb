@@ -12,7 +12,7 @@ def join_nested_strings(src)
 
     while column_index < src[row_index].length do
       
-      if src[row_index][column_index].calss == String
+      if (src[row_index][column_index]).calss == String
         new_value.join(src[row_index][column_index]) 
       end
       column_index += 1 
