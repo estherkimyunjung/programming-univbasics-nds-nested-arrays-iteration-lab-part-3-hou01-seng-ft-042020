@@ -14,11 +14,13 @@ def join_nested_strings(src)
       
       if src[row_index][column_index].class == String
        new_array << src[row_index][column_index]
-       
       end
+      
       column_index += 1 
     end
+    
     row_index += 1 
   end
+  
   new_array.join(" ")
 end
