@@ -3,10 +3,10 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   
   row_index = 0 
-  new_value = ""
 
   while row_index < src.length do
     column_index = 0 
+    new_value = ""
 
     while column_index < src[row_index].length do
       
