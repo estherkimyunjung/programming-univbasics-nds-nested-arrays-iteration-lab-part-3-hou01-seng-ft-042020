@@ -5,6 +5,7 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   
   row_index = 0 
+  new_array = []
 
   while row_index < src.length do
     column_index = 0 
@@ -12,12 +13,12 @@ def join_nested_strings(src)
     while column_index < src[row_index].length do
       
       if src[row_index][column_index].class == String
-       return src[row_index][column_index].join(" ")
+       new_array << src[row_index][column_index]
        
       end
       column_index += 1 
     end
     row_index += 1 
   end
-  
+  new_array.join(" ")
 end
